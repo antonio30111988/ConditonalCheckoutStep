@@ -1,0 +1,17 @@
+{
+  "name": "antonio88/conditional-checkout-step",
+  "description": "Display additional checkout step if in cart product Prop65 attribute exist",
+  "type": "magento2-module",
+  "require": {
+    "php": "^7.0",
+    "magento/framework": "^100.0"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Antonio88\\ConditionalCheckoutStep\\": ""
+    }
+  }
+}

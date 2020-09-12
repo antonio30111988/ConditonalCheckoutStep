@@ -1,0 +1,20 @@
+
+<li id="customer_message" role="presentation" class="checkout-customer-message" data-bind="fadeVisible: isVisible">
+    <div class="step-title" data-bind="i18n: stepTitle" data-role="title"></div>
+    <div id="conditional-checkout-step" class="step-content" data-role="content">
+        <div role="contentinfo" if="getCustomerMessage().length" class="message notice">
+            <span text="getCustomerMessage()" />
+        </div>
+
+        <div class="actions-toolbar">
+            <button click="navigateToCartPage" type="button" class="button action continue secondary">
+                <span data-bind="i18n: 'No'"></span>
+            </button>
+            <form data-bind="submit: navigateToNextStep" >
+                <button data-role="opc-continue" type="submit" class="button action continue primary">
+                    <span data-bind="i18n: 'Yes'"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+</li>
